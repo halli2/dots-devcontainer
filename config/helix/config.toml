@@ -1,0 +1,53 @@
+# theme = "sonokai_shusia"
+theme = "base16_transparent"
+# theme = "dark_plus"
+
+[editor]
+line-number = "relative"
+auto-format = true
+bufferline = "multiple"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+"A-+" = "switch_to_uppercase"
+'\' = "switch_to_lowercase"
+"C-+" = "switch_case"
+# "," = { w = ":w" }
+" " = { "å" = ":quit" }
+
+[keys.insert]
+A-h = "move_char_left"
+A-j = "move_line_down"
+A-k = "move_line_up"
+A-l = "move_char_right"
+A-o = "open_below"
+A-p = "open_above"
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"
